@@ -26,7 +26,8 @@
     <link href="css/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/buy.css">
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
@@ -53,8 +54,8 @@
                                 <li class="nav-item">
                                     <div class="dropdown">
                                         <button class="btn btn-secondary dropdown-toggle sweet" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Sweets
-                                </button>
+                  Sweets
+                </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                             <a class="dropdown-item" href="traditional.html">Traditional Sweets</a>
                                             <a class="dropdown-item" href="chocolate.html">Chocolates</a>
@@ -90,74 +91,47 @@
 
     </div>
 
-    <!-- service section -->
 
-    <section class="service_section layout_padding ">
+    <section class="fruit_section layout_padding-top">
         <div class="container">
-            <h2 class="custom_heading">Our Services</h2>
+            <h2 class="custom_heading">Your items</h2>
             <p class="custom_heading-text">
                 There are many variations of passages of Lorem Ipsum available, but the majority have
             </p>
             <div class=" layout_padding2">
                 <div class="card-deck">
                     <div class="card">
-                        <img class="card-img-top" src="images/card-item-1.png" alt="Card image cap" />
                         <div class="card-body">
-                            <h5 class="card-title">Traditional Sweets</h5>
+                            <h5 class="card-title">Bal Mithai</h5>
+                            <img class="product-thumb" src="./images/balmithai.jpg" alt="" width="80px" style="float:right;">
                             <p class="card-text">
-                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                                1 pack * 1 = Total Rs 240.00
                             </p>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="images/card-item-2.png" alt="Card image cap" />
                         <div class="card-body">
-                            <h5 class="card-title">Chocolates</h5>
+                            <h5 class="card-title">Raj Bhog</h5>
+                            <img class="product-thumb" src="./images/rajbhog.jpg" alt="" width="80px" style="float:right;">
                             <p class="card-text">
-                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="images/card-item-3.png" alt="Card image cap" />
-                        <div class="card-body">
-                            <h5 class="card-title">Boiled Sweets</h5>
-                            <p class="card-text">
-                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="images/card-item-4.png" alt="Card image cap" />
-                        <div class="card-body">
-                            <h5 class="card-title">Sour Sweets</h5>
-                            <p class="card-text">
-                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                                1 pack * 1 = Total Rs 290.00
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <a href="" class="custom_dark-btn">
-          Read More
-        </a>
+                <p class="grand">Grand Total = Rs 530.00</p>
+                <div class="buy-now"><a href="" class="custom_dark-btn">Pay Now</a></div>
             </div>
         </div>
     </section>
 
-    <!-- end service section -->
-    <section class="map_section">
-        <div id="map" class="h-100 w-100 ">
-        </div>
-    </section>
 
     <section class="info_section layout_padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
                     <h5>
-                        Sweets
+                        Fruits
                     </h5>
                     <ul>
                         <li>
@@ -301,33 +275,7 @@
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
 
-    <script>
-        // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-        // Australia.
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: {
-                    lat: 28.364857,
-                    lng: 77.541580
-                },
-            });
 
-            var image = 'images/maps-and-flags.png';
-            var beachMarker = new google.maps.Marker({
-                position: {
-                    lat: 28.364857,
-                    lng: 77.541580
-                },
-                map: map,
-                icon: image
-            });
-        }
-    </script>
-    <!-- google map js -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
-    </script>
-    <!-- end google map js -->
 </body>
 
 </html>

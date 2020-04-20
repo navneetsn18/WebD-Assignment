@@ -26,7 +26,8 @@
     <link href="css/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
@@ -53,8 +54,8 @@
                                 <li class="nav-item">
                                     <div class="dropdown">
                                         <button class="btn btn-secondary dropdown-toggle sweet" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Sweets
-                                </button>
+                  Sweets
+                </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                             <a class="dropdown-item" href="traditional.html">Traditional Sweets</a>
                                             <a class="dropdown-item" href="chocolate.html">Chocolates</a>
@@ -90,74 +91,65 @@
 
     </div>
 
-    <!-- service section -->
 
-    <section class="service_section layout_padding ">
-        <div class="container">
-            <h2 class="custom_heading">Our Services</h2>
-            <p class="custom_heading-text">
-                There are many variations of passages of Lorem Ipsum available, but the majority have
-            </p>
-            <div class=" layout_padding2">
-                <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="images/card-item-1.png" alt="Card image cap" />
-                        <div class="card-body">
-                            <h5 class="card-title">Traditional Sweets</h5>
-                            <p class="card-text">
-                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                            </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 mx-auto">
+                <div id="first">
+                    <div class="myform form ">
+                        <div class="logo mb-3">
+                            <div class="col-md-12 text-center">
+                                <h1>Login</h1>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="images/card-item-2.png" alt="Card image cap" />
-                        <div class="card-body">
-                            <h5 class="card-title">Chocolates</h5>
-                            <p class="card-text">
-                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="images/card-item-3.png" alt="Card image cap" />
-                        <div class="card-body">
-                            <h5 class="card-title">Boiled Sweets</h5>
-                            <p class="card-text">
-                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="images/card-item-4.png" alt="Card image cap" />
-                        <div class="card-body">
-                            <h5 class="card-title">Sour Sweets</h5>
-                            <p class="card-text">
-                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                            </p>
-                        </div>
+                        <form action="index.html" method="GET" name="login">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Password</label>
+                                <input type="password" name="password" id="password" class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                            </div>
+                            <div class="form-group">
+                                <p class="text-center">By signing up you accept our <a href="#">Terms Of Use</a></p>
+                            </div>
+                            <div class="col-md-12 text-center ">
+                                <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+                            </div>
+                            <div class="col-md-12 ">
+                                <div class="login-or">
+                                    <hr class="hr-or">
+                                    <span class="span-or">or</span>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <p class="text-center">
+                                    <a href="javascript:void();" class="google btn mybtn"><i class="fa fa-google-plus">
+                                 </i> Signup using Google
+                                 </a>
+                                </p>
+                            </div>
+                            <div class="form-group">
+                                <p class="text-center">Don't have account? <a href="#" id="signup">Sign up here</a></p>
+                            </div>
+                        </form>
+
                     </div>
                 </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <a href="" class="custom_dark-btn">
-          Read More
-        </a>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+    </div>
 
-    <!-- end service section -->
-    <section class="map_section">
-        <div id="map" class="h-100 w-100 ">
-        </div>
-    </section>
 
     <section class="info_section layout_padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
                     <h5>
-                        Sweets
+                        Fruits
                     </h5>
                     <ul>
                         <li>
@@ -301,33 +293,7 @@
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
 
-    <script>
-        // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-        // Australia.
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: {
-                    lat: 28.364857,
-                    lng: 77.541580
-                },
-            });
 
-            var image = 'images/maps-and-flags.png';
-            var beachMarker = new google.maps.Marker({
-                position: {
-                    lat: 28.364857,
-                    lng: 77.541580
-                },
-                map: map,
-                icon: image
-            });
-        }
-    </script>
-    <!-- google map js -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
-    </script>
-    <!-- end google map js -->
 </body>
 
 </html>

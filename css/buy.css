@@ -1,0 +1,16 @@
+.product-thumb {
+    box-shadow: 5px 5px 3px grey;
+    border-radius: 5px;
+}
+
+.grand {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+.buy-now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
