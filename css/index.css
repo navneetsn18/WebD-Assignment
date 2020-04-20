@@ -1,0 +1,22 @@
+.sweet {
+    border: 0px;
+    margin-top: 3.5px;
+    background-color: #ffffff;
+    color: black;
+}
+
+.sliding-images {
+    border-radius: 7px;
+    box-shadow: 5px 15px 17px grey;
+}
+
+.index-buy {
+    border-radius: 10px;
+    box-shadow: 8px 6px 5px gray;
+}
+
+.me {
+    margin-bottom: 10px;
+    width: 250px;
+    border-radius: 360px;
+}
